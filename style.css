@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    margin: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 160px;
+}
+.cart img {
+    width: 40px;
+}
+.cart.anim1{
+    animation-delay: 1s;
+}
+
+nav ul{
+    flex: 1;
+    margin-left: 50px; 
+}
+nav ul.anim1{
+    animation-delay: 0.5s;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.content{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.anim2{
+    animation: move-right 0.5s linear 1.5s forwards;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+@keyframes move-right{
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adf4, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+.content h1 {
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p {
+    font-size: 20px;
+    color: #697199;
+}
+.image{
+    margin-top: 15px;
+    margin-left: 10%;
+
+}
+.image img{
+    display: inline-block;
+    width: 40px;
+    margin-right: 15px;
+}
+.feature-img {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+.anim3{
+    animation: open 0.5s linear  2s forwards;
+    opacity: 0;
+}
+@keyframes open {
+    100% {
+        opacity: 1;
+    }
+}
+.side{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.side ul.anim2{
+    animation-delay: 2s;
+}
+.side ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+.side ul li a{
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 14px;
+    color: black;
+}
+.anim1{
+    animation: move-down 0.5s linear forwards;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+@keyframes move-down{
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
